@@ -10,10 +10,11 @@ New data with dynamic stopping will be:
 python nn.py --inputSize 50 100 200 300 --hiddenSize 0.0 0.1 0.25 0.3 0.4 0.5 0.6 0.7 0.75 0.8 0.85 0.9 1.0 --epochs 100500
 
 To do list:
-- implement dynamic stopping
-- re run simulations with more sizes of hidden layer
+- implement dynamic stopping - DONE
+- re run simulations with more sizes of hidden layer - DONE
 - in analysis_pred: compute the number of activated behaviors (threshold: look at the distribition of data: is there a valley between the two peaks (0,1), anyway check that the results are robust upon change of the threshold)
 - try Riccardo's code on one input size + hidden sizes to check for loss
-- think about how to implement point 2) about context dependency
+- think about how to implement point 2) about context dependency:
+  - take the trained net, modify it's architecture by adding K additional neurons at an input layer with high weights for some            hidden neurons (manually activate those) - see what happens to the behavior output
 - correlated input output ?
 
